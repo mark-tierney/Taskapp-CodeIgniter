@@ -6,7 +6,7 @@ Tasks
 
 <?= $this->section("content") ?>
 
-<a href="<?= site_url("/tasks") ?>">&laquo; back to index</a>
+<a href="<?= site_url("/tasks") ?>" class="btn btn-primary mb-3">&laquo; back to index</a>
 
 <dl>
     <dt>ID</dt>
@@ -22,7 +22,7 @@ Tasks
     <dd><?= $task->updated_at ?></dd>
 </dl>
 
-<a href="<?= site_url('tasks/edit/' . $task->id) ?>">Edit</a>
-<a href="<?= site_url('tasks/delete/' . $task->id) ?>">Delete</a>
+<a href="<?= site_url('tasks/edit/' . $task->id) ?>" class="btn btn-info">Edit</a>
+<a href="<?= site_url('tasks/delete/' . $task->id) ?>" class="btn btn-danger">Delete</a>
 
 <?= $this->endSection() ?>

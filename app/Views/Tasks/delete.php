@@ -11,8 +11,8 @@ Delete Task
 
 <?= form_open("/tasks/delete/" . $task->id) ?>
     
-    <button>Yes, delete</button>
-    <a href="<?= site_url("/tasks/show/" . $task->id) ?>">Cancel</a>
+    <button class="btn btn-danger">Yes</button>
+    <a href="<?= site_url("/tasks/show/" . $task->id) ?>" class="btn btn-secondary">Cancel</a>
 </form>
 
 <?= $this->endSection() ?>

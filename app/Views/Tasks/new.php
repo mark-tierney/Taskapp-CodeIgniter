@@ -20,8 +20,8 @@ New Task
     
     <?= $this->include('Tasks/form') ?>
 
-    <button>Save</button>
-    <a href="<?= site_url("/tasks") ?>">Cancel</a>
+    <button class="btn btn-primary">Save</button>
+    <a href="<?= site_url("/tasks") ?>" class="btn btn-secondary">Cancel</a>
 </form>
 
 <?= $this->endSection() ?>
